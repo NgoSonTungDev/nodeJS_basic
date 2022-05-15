@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 var mongoose = require('mongoose');
-const mlabURI = 'mongodb+srv://ngosontung:1312@cluster0.9tgoq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const mlabURI = 'mongodb+srv://ngosontung:1312@cluster0.9tgoq.mongodb.net/databaseUser?retryWrites=true&w=majority'
 const app = express();
 const PORT = process.env.PORT || 5000;
 const userRouter = require("./routes/user")

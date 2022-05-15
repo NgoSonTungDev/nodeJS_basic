@@ -17,18 +17,16 @@ var userSchema = new Schema({
     type: String,
     required: true,
   },
-  role: {
-    type: String,
-    required: true,
-    // default: "user",
-  },
   dateAdded: { type: Date, default: Date.now },
 });
 
 const User = mongoose.model("User", userSchema);
-autoIncrement.initialize(mongoose.connection);
-userSchema.plugin(autoIncrement.plugin, { model: "User", field: "userID" });
+
+//tu đông tang id//
+
+// autoIncrement.initialize(mongoose.connection);
+// userSchema.plugin(autoIncrement.plugin, { model: "User", field: "userID" });
 
 module.exports = {
-  User
+  User,
 };
